@@ -1,6 +1,5 @@
-python-telegram-bot
-pytesseract
-matplotlib
-numpy
+python-telegram-bot==20.8  # Use the latest version compatible with your Python
 Pillow
-requests
+numpy
+matplotlib
+google-generativeai

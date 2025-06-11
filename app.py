@@ -17,7 +17,7 @@ from telegram.ext import (
 )
 
 # Initialize Gemini client
-client = genai.Client(api_key="AIzaSyCerjxXg_b6AAW4sQEq2Tzxo_sXV40dkOI")
+client = genai.Client(api_key="add your api key in here")
 
 # Conversation states
 SELECT_OPTION, ASK_BAND, ASK_TOPIC, PROCESS_ESSAY, HANDWRITING_UPLOAD = range(5)
@@ -816,7 +816,7 @@ async def restart_program(update: Update, context):
     return SELECT_OPTION
 
 def main():
-    application = Application.builder().token("7752367540:AAHXfq2xa6KpvrLFAOm0qherh7sgIrGH13w").build()
+    application = Application.builder().token("add your bot token ").build()
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
         states={
